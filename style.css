@@ -1,0 +1,138 @@
+/* ===== Global Reset ===== */
+* {
+  box-sizing: border-box;
+}
+
+/* ===== Base Body Styles ===== */
+body {
+  background: #000;
+  color: #33ff33;
+  font-family: "Courier New", Courier, monospace;
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* ===== Login Screen ===== */
+#login-screen h2,
+#login-form p,
+#login-form input,
+#login-form button {
+  margin-bottom: 1rem;
+}
+
+#login-form input {
+  background: black;
+  border: 1px solid #33ff33;
+  color: #33ff33;
+  padding: 0.5rem;
+  width: 100%;
+  font-family: inherit;
+}
+
+#login-form button {
+  background: transparent;
+  color: #33ff33;
+  border: 1px solid #33ff33;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+#login-form button:hover {
+  background: #33ff33;
+  color: black;
+}
+
+#error {
+  color: red;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#error.show {
+  opacity: 1;
+}
+
+/* ===== Navigation Bar ===== */
+nav {
+  background-color: #1a1a1a;
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  border-bottom: 2px solid crimson;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: crimson;
+  outline: none;
+}
+
+/* ===== Page Header ===== */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+}
+
+header p {
+  font-style: italic;
+  color: #aa0000;
+  font-weight: bold;
+}
+
+/* ===== SCP Entry Boxes ===== */
+.scp {
+  background: #1a1a1a;
+  border-left: 5px solid crimson;
+  padding: 1.2rem;
+  margin: 1.5rem 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(255, 0, 0, 0.15);
+  transition: background 0.3s ease;
+}
+
+.scp:hover {
+  background: #2a2a2a;
+}
+
+.scp h3 {
+  margin-top: 0;
+  color: crimson;
+}
+
+/* ===== Section Headers ===== */
+section h2 {
+  border-bottom: 2px solid crimson;
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+}
+
+/* ===== Smooth Scrolling ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+#main-content {
+  display: none;
+}
