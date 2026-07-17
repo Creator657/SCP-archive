@@ -8,7 +8,8 @@ const errorSound = document.getElementById('errorSound');
 const users = {
   "ADMIN#1_011612_7352": "1029384756Ks",
   "ADMIN#2_121911_4650": "13579753Cc",
-  "VEIWER#1_071015_7692": "0192837465Ls"
+  "VEIWER#1_071015_7692": "0192837465Ls",
+  "VEIWER#2_355016_6235": "6381748295Sv"
 };
 
 // Simulate terminal boot
